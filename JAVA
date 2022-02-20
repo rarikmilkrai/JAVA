@@ -21,3 +21,21 @@ public class Hora {
         System.out.println(relogio.toString());
     } 
 }
+
+// CALCULO DE IMC
+package calculo.de.imc;
+
+import java.util.Scanner;
+
+public class CalculoDeImc {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        System.out.println("Digite o peso: ");
+        double peso = leitor.nextDouble();
+        System.out.println("Digite a altura: ");
+        double altura = leitor.nextDouble();
+        double imc;
+        imc = peso / Math.pow(altura, 2);
+        System.out.println("IMC É: " + imc);
+    }    
+}
