@@ -73,3 +73,33 @@ public class Aumentosalario {
         System.out.printf("Seu salario com aumento de 25 porcento é: R$ %,.2f", salatual);
     }  
 }
+
+//PASSANDO UM COLCHAO PELA PORTA
+package passagemdocolchao;
+
+import java.util.Scanner;
+public class Passagemdocolchao {
+    public static void main(String[] args) {
+        Scanner medidas = new Scanner(System.in);
+        System.out.println("Digite largura do colchão: ");
+        double lcolc = medidas.nextDouble();
+        System.out.println("Digite o comprimento do colchão: ");
+        double ccolc = medidas.nextDouble();
+        System.out.println("Digite  a altura  do colchao: ");
+        double acolc = medidas.nextDouble();
+        System.out.println("Digite a altura da porta: ");
+        double aporta = medidas.nextDouble();
+        System.out.println("Digite largura da porta: ");
+        double lporta = medidas.nextDouble();
+        
+        if (lcolc >= lporta && lcolc >= aporta || ccolc >= lporta && ccolc >= aporta)
+        {
+           System.out.print("Seu colchao nao passa pela porta");
+         }
+        else
+        {
+         System.out.print("seu colchao passa na porta");
+        }      
+    }
+ }    
+
