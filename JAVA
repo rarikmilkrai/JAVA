@@ -149,3 +149,33 @@ public class Maiornota {
     }
     }
 }
+
+// PLANO CARTESIANO
+package planocartesiano;
+
+import java.util.Scanner;
+
+public class Planocartesiano {
+    
+    public static void main(String[] args) {
+       Scanner in = new Scanner(System.in);
+       System.out.println("Digite o par ordenado: ");
+       double x = in.nextDouble();
+       double y = in.nextDouble();
+       if (x>0 && y>0){
+          System.out.println("O par ordenado se encontra no 1º quadrante.");
+        } else if(x<0 && y>0){
+          System.out.println("O par ordenado se encontra no 2º quadrante.");
+        } else if(x<0 && y<0){
+          System.out.println("O par ordenado se encontra no 3º quadrante.");
+        } else if(x>0 && y<0){
+          System.out.println("O par ordenado se encontra no 4º quadrante.");
+        } else if(x==0 && y==0) {
+          System.out.println("Par ordenado se encontra na origem.");
+        } else if(x!= 0 && y==0) {
+          System.out.println("Se encontra no eixo x.");
+        } else{
+          System.out.println("Se encontra no y.");
+        }
+    }    
+}
