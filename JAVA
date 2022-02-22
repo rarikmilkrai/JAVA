@@ -127,3 +127,25 @@ import java.util.Scanner;
     }
     }
     
+//DIGITAR A NOTA DE UM ALUNO E DIZER O PARAMETRO SE A,B,C,D,E.
+package maiornota;
+
+import java.util.Scanner;
+public class Maiornota {
+    public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    System.out.println("Digite a nota do aluno: ");
+    double x = in.nextDouble();
+    if (x<=10 && x>=8.5){
+        System.out.println("A");
+    }else if (x>=7){
+        System.out.println("B");
+    }else if (x>=5){
+        System.out.println("C");
+    }else if (x>=3){
+        System.out.println("D");
+    }else{
+        System.out.println("E");
+    }
+    }
+}
