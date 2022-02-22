@@ -179,3 +179,29 @@ public class Planocartesiano {
         }
     }    
 }
+
+//lados de um triangulo
+package ladosdeumtriangulo;
+
+import java.util.Scanner;
+
+public class Ladosdeumtriangulo {
+    
+    public static void main(String[] args) {
+          Scanner leia = new Scanner(System.in);
+
+        System.out.println("Escreva os lados A; B; C do seu triangulo respectivamente");
+        double a = leia.nextDouble();
+        double b = leia.nextDouble();
+        double c = leia.nextDouble();
+
+        if (a==b && b==c && c==b){
+            System.out.println("Este triangulo é equilátero");
+        }
+        else if(a==b && a!=ca==c && a!=bb==c && b!=a) {
+            System.out.println("Este triangulo é isosceles");
+        }else if (a!=b && b!=c){
+            System.out.println("Este triangulo é escaleno");
+        }
+    } 
+}
