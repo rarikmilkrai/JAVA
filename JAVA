@@ -205,3 +205,37 @@ public class Ladosdeumtriangulo {
         }
     } 
 }
+
+// EXERCICIO SWITCH CASE
+package switchcase;
+
+import java.util.Scanner;
+
+public class Switchcase {
+
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Digite um numero inteiro: ");
+        int inteiro = in.nextInt();
+        System.out.println("Digite um caractere matematico: ");
+        char mat = in.next().charAt(0);
+        System.out.println("Digite um segundo numero inteiro: ");
+        int inteiro1 = in.nextInt();
+        switch (mat) {
+            case '+':
+                System.out.printf("%d + %d = %d",inteiro,inteiro1,inteiro+inteiro1);
+                break;
+            case'-':
+                System.out.printf("%d - %d = %d",inteiro,inteiro1,inteiro-inteiro1);
+                break;
+            case'*':
+                System.out.printf("%d * %d = %d",inteiro, inteiro1, inteiro * inteiro1);
+                break;
+            case'/':
+                System.out.printf("%d / %d = %d",inteiro, inteiro1, inteiro/inteiro1);
+                break;           
+        }                
+    }    
+}
+
